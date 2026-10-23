@@ -186,7 +186,8 @@ La password è **dinamica** e si compone nel formato `mm1gg7`: `mm` = mese corre
 
 ### 20. Impostare la rete Ethernet del POS
 
-Aprire le **IMPOSTAZIONI**: qui la password è **fissa** (vedere il [paragrafo 2.3 del manuale](assets/resources/0576100M000218_2.00.pdf)). Selezionare **Rete e Internet**.
+Aprire le **IMPOSTAZIONI**: qui la password è **fissa**, tramite tastiera numerica inserire la seguente password: **pax9876@@** 
+(vedere il [paragrafo 2.3 del manuale](assets/resources/0576100M000218_2.00.pdf)). Selezionare **Rete e Internet**.
 
 ![Impostazioni - Rete e Internet](assets/images/rt-pos-20-pos-impostazioni-rete.jpg)
 

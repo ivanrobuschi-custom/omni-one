@@ -30,8 +30,7 @@ Guida introduttiva del registratore telematico **OMNI ONE** (codice 0578100M0001
 13. Porta cassetto rendiresto
 14. Porta seriale RS232
 15. Porta USB tipo A
-16. Riservato
-17. Porta di alimentazione
+16. Porta di alimentazione
 
 !!! warning "Attenzione"
     Lo sportello di servizio (9) è riservato esclusivamente all'assistenza tecnica. È quindi vietata la sua apertura poiché comporterebbe l'inibizione all'utilizzo e quindi il blocco del dispositivo.
