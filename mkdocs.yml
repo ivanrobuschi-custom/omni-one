@@ -44,7 +44,7 @@ copyright: Copyright Custom S.p.A 2026
 nav:
   - Home: index.md
   - Configurazione RT/POS: configurazione-rt-pos.md
-  - Guida all'uso Omni ONE: guida-all-uso-omni-one.md
+  - Guida all'uso Omni ONE:
       - Guida introduttiva OMNI ONE: omni-one-guida-introduttiva.md
   - Configurazione POS Q10A:
       - Configurazione carte: q10a-comunicazione-pos.md
