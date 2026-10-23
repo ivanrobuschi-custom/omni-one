@@ -141,13 +141,7 @@ Ethernet, USB tipo A, seriale RS232, porta per cassetto rendiresto e ingresso di
 |---------|-----------|
 | [Configurazione RT/POS](configurazione-rt-pos.md) | Procedura passo per passo con immagini: rete dell'RT, comunicazione con il POS, configurazione del Q10A |
 | [Guida introduttiva OMNI ONE](omni-one-guida-introduttiva.md) | Descrizione del dispositivo, assetti operativi, rendiconti, codici brevi, pulizia, specifiche e sicurezza |
-| [Carte e sostituzione POS](q10a-comunicazione-pos.md) | Configurazione carte (Terminal ID, connessione, certificato) e sostituzione del POS tramite MAXSTORE |
-| [Configurazione KeepUp Smart](q10a-keepup-smart.md) | Scambio importo su OMNI TOUCH e DIS-PAY |
-| [Configurazione carte](q10a-configurazione-carte.md) | Installazione Terminal ID e parametri di comunicazione |
-| [Configurazione PAX Tools](q10a-paxtools.md) | Scambio importo con protocollo 17 |
-| [Sostituzione POS](q10a-sostituzione-pos.md) | Procedura di sostituzione tramite MAXSTORE |
-| [Network Configurator](q10a-network-configurator.md) | Impostazione di rete alternativa del POS Q10A |
-| [Launcher Q10A](q10a-launcher.md) | Tasto "i" per Terminal ID, SN e release CARTE |
+| [Configurazione carte](q10a-comunicazione-pos.md) | Installazione dell'applicazione CARTE sul POS Q10A: Terminal ID, codice azienda, connessione e certificato |
 
 | Documento | Codice | Versione | Download |
 |-----------|--------|----------|----------|

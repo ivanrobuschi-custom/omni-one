@@ -208,7 +208,7 @@ Premere il **pulsante centrale (tondo)** per tornare al menù principale e aprir
 
 ![Schermata Applicazioni](assets/images/rt-pos-24-pos-applicazioni.jpg)
 
-Inserire la **password installatore**, sempre uguale (vedere il [capitolo 5 del manuale](q10a-paxtools.md)), e confermare con **OK**.
+Inserire la **password installatore**, sempre uguale (vedere il [capitolo 5 del manuale](assets/resources/0576100M000218_2.00.pdf)), e confermare con **OK**.
 
 ![Schermata password installatore](assets/images/rt-pos-25-pos-password-installatore.jpg)
 
@@ -254,8 +254,5 @@ Quando il display del POS mostra la stessa dicitura che appare sul display opera
 
 ## Approfondimenti
 
-- [Configurazione carte e sostituzione POS](q10a-comunicazione-pos.md)
-- [Configurazione PAX Tools](q10a-paxtools.md)
-- [Configurazione KeepUp Smart](q10a-keepup-smart.md)
-- [Configurazione carte](q10a-configurazione-carte.md)
+- [Configurazione carte](q10a-comunicazione-pos.md)
 - [Manuale di configurazione Q10A (PDF)](assets/resources/0576100M000218_2.00.pdf)
