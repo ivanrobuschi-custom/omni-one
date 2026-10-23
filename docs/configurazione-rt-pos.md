@@ -21,7 +21,7 @@ La procedura si svolge in tre fasi:
 | **3** | POS Q10A | Rete del POS e collegamento all'RT (**PAX Tools**) |
 
 !!! warning "Prima di iniziare"
-    Per la comunicazione tra RT e POS occorre usare indirizzi IP **STATICI**, uno per il registratore di cassa e uno per il POS. Verificare che la rete locale del punto vendita sia attiva e che l'RT (e il POS, se separato) siano collegati con cavo Ethernet.
+    Per la comunicazione tra RT e POS occorre usare indirizzi IP **STATICI**, uno per il registratore di cassa e uno per il POS. Verificare che la rete locale del punto vendita sia attiva e che l'RT **Omni_One** siano collegati con cavo Ethernet.
 
 ## Valori usati nell'esempio
 
