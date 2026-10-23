@@ -1,0 +1,1610 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Custom S.p.A.">
+      
+      
+        <link rel="canonical" href="https://github.com/custom-spa/omni-one.git/configurazione-rt-pos/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../omni-one-guida-introduttiva/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Configurazione RT/POS - OMNI ONE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#configurazione-rtpos" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href=".." title="OMNI ONE" class="md-header__button md-logo" aria-label="OMNI ONE" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OMNI ONE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Configurazione RT/POS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Condividi" aria-label="Condividi" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Configurazione RT/POS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../omni-one-guida-introduttiva/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guida all'uso Omni ONE
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../q10a-comunicazione-pos/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Configurazione POS Q10A
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OMNI ONE" class="md-nav__button md-logo" aria-label="OMNI ONE" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    OMNI ONE
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configurazione RT/POS
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configurazione RT/POS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#valori-usati-nellesempio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valori usati nell'esempio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-1-configurare-la-rete-dellrt-menu-911-ethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 1 - Configurare la rete dell'RT (menù 911 Ethernet)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fase 1 - Configurare la rete dell&#39;RT (menù 911 Ethernet)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-accendere-il-registratore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Accendere il registratore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-entrare-in-assetto-programmazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Entrare in assetto Programmazione
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-aprire-il-menu-911-e-verificare-il-dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Aprire il menù 911 e verificare il DHCP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-indirizzo-ip-del-registratore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Indirizzo IP del registratore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-maschera-subnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Maschera subnet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Gateway
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-porta-protocollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Porta protocollo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-mac-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. MAC ID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-controllare-il-documento-gestionale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Controllare il documento gestionale
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-2-configurare-la-comunicazione-con-il-pos-menu-917-pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 2 - Configurare la comunicazione con il POS (menù 917 POS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fase 2 - Configurare la comunicazione con il POS (menù 917 POS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-selezionare-il-menu-917-pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Selezionare il menù 917 POS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-abilitare-la-connessione-ethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Abilitare la connessione Ethernet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-indirizzo-ip-del-pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Indirizzo IP del POS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-porta-di-comunicazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Porta di comunicazione
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-scontrino-su-pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Scontrino su POS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-controllare-il-documento-gestionale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Controllare il documento gestionale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-uscire-dalla-programmazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Uscire dalla programmazione
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-3-configurare-il-pos-q10a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 3 - Configurare il POS Q10A
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fase 3 - Configurare il POS Q10A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#18-accedere-al-pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Accedere al POS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-inserire-la-password-dinamica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Inserire la password dinamica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-impostare-la-rete-ethernet-del-pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Impostare la rete Ethernet del POS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-aprire-pax-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Aprire PAX Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-configurare-lecr-protocollo-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Configurare l'ECR (protocollo 17)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-inserire-lip-del-registratore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Inserire l'IP del registratore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-verifica-finale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Verifica finale
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riepilogo-dei-collegamenti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Riepilogo dei collegamenti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#approfondimenti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Approfondimenti
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../omni-one-guida-introduttiva/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guida all'uso Omni ONE
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../q10a-comunicazione-pos/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configurazione POS Q10A
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#valori-usati-nellesempio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Valori usati nell'esempio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-1-configurare-la-rete-dellrt-menu-911-ethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 1 - Configurare la rete dell'RT (menù 911 Ethernet)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fase 1 - Configurare la rete dell&#39;RT (menù 911 Ethernet)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-accendere-il-registratore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Accendere il registratore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-entrare-in-assetto-programmazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Entrare in assetto Programmazione
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-aprire-il-menu-911-e-verificare-il-dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Aprire il menù 911 e verificare il DHCP
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-indirizzo-ip-del-registratore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Indirizzo IP del registratore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-maschera-subnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Maschera subnet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-gateway" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Gateway
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-dns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. DNS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-porta-protocollo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Porta protocollo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-mac-id" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. MAC ID
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-controllare-il-documento-gestionale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Controllare il documento gestionale
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-2-configurare-la-comunicazione-con-il-pos-menu-917-pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 2 - Configurare la comunicazione con il POS (menù 917 POS)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fase 2 - Configurare la comunicazione con il POS (menù 917 POS)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-selezionare-il-menu-917-pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Selezionare il menù 917 POS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-abilitare-la-connessione-ethernet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Abilitare la connessione Ethernet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-indirizzo-ip-del-pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Indirizzo IP del POS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-porta-di-comunicazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Porta di comunicazione
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-scontrino-su-pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Scontrino su POS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-controllare-il-documento-gestionale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        16. Controllare il documento gestionale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-uscire-dalla-programmazione" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        17. Uscire dalla programmazione
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fase-3-configurare-il-pos-q10a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fase 3 - Configurare il POS Q10A
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fase 3 - Configurare il POS Q10A">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#18-accedere-al-pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        18. Accedere al POS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-inserire-la-password-dinamica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        19. Inserire la password dinamica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-impostare-la-rete-ethernet-del-pos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        20. Impostare la rete Ethernet del POS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-aprire-pax-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        21. Aprire PAX Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-configurare-lecr-protocollo-17" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        22. Configurare l'ECR (protocollo 17)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-inserire-lip-del-registratore" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        23. Inserire l'IP del registratore
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-verifica-finale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        24. Verifica finale
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#riepilogo-dei-collegamenti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Riepilogo dei collegamenti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#approfondimenti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Approfondimenti
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<!-- categoria assegnata per inferenza: verificare -->
+<!-- procedura ricostruita dal video dimostrativo (immagini e voce dell'operatore) e confrontata con il manuale Q10A Rev. 2.00 -->
+
+<h1 id="configurazione-rtpos">Configurazione RT/POS</h1>
+<p>Procedura guidata, passo per passo, per configurare il registratore telematico <strong>OMNI ONE</strong> con il dispositivo POS <strong>Q10A</strong> (Custom Pay) e farli comunicare con il <strong>protocollo 17</strong>.</p>
+<p>La procedura si svolge in tre fasi:</p>
+<table>
+<thead>
+<tr>
+<th>Fase</th>
+<th>Dove</th>
+<th>Cosa si configura</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>Registratore telematico (RT)</td>
+<td>Parametri di rete dell'RT (menù <strong>911 Ethernet</strong>)</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Registratore telematico (RT)</td>
+<td>Comunicazione con il POS (menù <strong>917 POS</strong>), poi uscita dalla programmazione</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>POS Q10A</td>
+<td>Rete del POS e collegamento all'RT (<strong>PAX Tools</strong>)</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Prima di iniziare</p>
+<p>Per la comunicazione tra RT e POS occorre usare indirizzi IP <strong>STATICI</strong>, uno per il registratore di cassa e uno per il POS. Verificare che la rete locale del punto vendita sia attiva e che l'RT <strong>Omni_One</strong> siano collegati con cavo Ethernet.</p>
+</div>
+<h2 id="valori-usati-nellesempio">Valori usati nell'esempio</h2>
+<p>Gli indirizzi qui sotto sono quelli dell'esempio mostrato nelle immagini. Nell'installazione reale vanno sostituiti con i dati della rete del cliente.</p>
+<table>
+<thead>
+<tr>
+<th>Parametro</th>
+<th>Valore d'esempio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DHCP</td>
+<td>Disabilitato</td>
+</tr>
+<tr>
+<td>IP del registratore di cassa (RT)</td>
+<td><code>10.15.22.210</code></td>
+</tr>
+<tr>
+<td>Maschera subnet</td>
+<td><code>255.255.255.0</code></td>
+</tr>
+<tr>
+<td>Gateway</td>
+<td><code>10.15.22.254</code></td>
+</tr>
+<tr>
+<td>DNS</td>
+<td><code>10.15.22.254</code></td>
+</tr>
+<tr>
+<td>Porta protocollo (RT)</td>
+<td><code>9100</code> (valore di default, da lasciare)</td>
+</tr>
+<tr>
+<td>IP del POS</td>
+<td><code>10.15.22.206</code></td>
+</tr>
+<tr>
+<td>Porta di comunicazione POS</td>
+<td><code>8080</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="fase-1-configurare-la-rete-dellrt-menu-911-ethernet">Fase 1 - Configurare la rete dell'RT (menù 911 Ethernet)</h2>
+<h3 id="1-accendere-il-registratore">1. Accendere il registratore</h3>
+<p>Accendere l'OMNI ONE con il tasto di accensione posto sul <strong>lato sinistro</strong> del dispositivo: il display mostra l'assetto di registrazione (<code>0,00</code>).</p>
+<p><img alt="Registratore acceso, display 0,00" src="../assets/images/rt-pos-01-accensione.jpg" /></p>
+<h3 id="2-entrare-in-assetto-programmazione">2. Entrare in assetto Programmazione</h3>
+<p>Premere il tasto <strong>CHIAVE</strong> per cambiare assetto operativo. Il display mostra in sequenza gli assetti (ad esempio <strong>LETTURA</strong>) fino ad arrivare a <strong>PROGRAMMAZIONE</strong>. In questo assetto si imposta con un <strong>indirizzo IP statico</strong> l'IP del registratore telematico.</p>
+<p><img alt="Pressione del tasto CHIAVE, display LETTURA" src="../assets/images/rt-pos-02-tasto-chiave.jpg" /></p>
+<p>Il display mostra <strong>PROGRAMMAZIONE</strong> con la voce di menù.</p>
+<p><img alt="Display PROGRAMMAZIONE" src="../assets/images/rt-pos-03-programmazione-911.jpg" /></p>
+<h3 id="3-aprire-il-menu-911-e-verificare-il-dhcp">3. Aprire il menù 911 e verificare il DHCP</h3>
+<p>Dal tastierino numerico digitare <strong>911</strong> e premere <strong>SBT</strong> (Subtotale) per entrare nel menù <strong>[911-Ethernet]</strong>.</p>
+<p><img alt="Pressione del tasto SBT" src="../assets/images/rt-pos-04-conferma-sbt.jpg" /></p>
+<p>Il primo parametro è <strong>ABILITA DHCP</strong>: deve essere <strong>[DISABILITATO]</strong>.</p>
+<p><img alt="Display ABILITA DHCP [DISABILITATO]" src="../assets/images/rt-pos-05-abilita-dhcp.jpg" /></p>
+<h3 id="4-indirizzo-ip-del-registratore">4. Indirizzo IP del registratore</h3>
+<p>Premere <strong>SBT</strong> per passare al parametro successivo. Alla voce <strong>INDIRIZZO IP</strong> impostare l'indirizzo IP statico del registratore telematico (es. <code>10.15.22.210</code>), scrivendolo dal tastierino numerico, e confermare con <strong>SBT</strong>.</p>
+<p><img alt="Display INDIRIZZO IP 10.15.22.210" src="../assets/images/rt-pos-06-indirizzo-ip.jpg" /></p>
+<h3 id="5-maschera-subnet">5. Maschera subnet</h3>
+<p>Alla voce <strong>MASCHERA SUBNET</strong> controllare o digitare la maschera di rete (es. <code>255.255.255.0</code>) e confermare con <strong>SBT</strong>.</p>
+<p><img alt="Display MASCHERA SUBNET 255.255.255.0" src="../assets/images/rt-pos-07-maschera-subnet.jpg" /></p>
+<h3 id="6-gateway">6. Gateway</h3>
+<p>Alla voce <strong>GATEWAY</strong> impostare il gateway della rete (es. <code>10.15.22.254</code>), sempre dal tastierino numerico, e confermare con <strong>SBT</strong>.</p>
+<p><img alt="Display GATEWAY 10.15.22.254" src="../assets/images/rt-pos-08-gateway.jpg" /></p>
+<h3 id="7-dns">7. DNS</h3>
+<p>Alla voce <strong>DNS</strong> impostare l'indirizzo del DNS (es. <code>10.15.22.254</code>), dal tastierino numerico, e confermare con <strong>SBT</strong>.</p>
+<p><img alt="Display DNS 10.15.22.254" src="../assets/images/rt-pos-09-dns.jpg" /></p>
+<h3 id="8-porta-protocollo">8. Porta protocollo</h3>
+<p>Alla voce <strong>PORTA PROTOCOLLO</strong> lasciare il valore di default (<code>9100</code>) e confermare con <strong>SBT</strong>.</p>
+<p><img alt="Display PORTA PROTOCOLLO 9100" src="../assets/images/rt-pos-10-porta-protocollo.jpg" /></p>
+<h3 id="9-mac-id">9. MAC ID</h3>
+<p>Il <strong>MAC ID</strong> viene scritto in automatico: non c'è nulla da digitare. Premere <strong>SBT</strong> per concludere.</p>
+<p><img alt="Display MAC ID" src="../assets/images/rt-pos-11-mac-id.jpg" /></p>
+<h3 id="10-controllare-il-documento-gestionale">10. Controllare il documento gestionale</h3>
+<p>Al termine l'RT stampa un <strong>documento gestionale</strong> (resoconto) con i parametri di rete del registratore. Controllare che i valori corrispondano a quelli voluti.</p>
+<p><img alt="Documento gestionale P(911) Ethernet" src="../assets/images/rt-pos-30-doc-911.jpg" /></p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Il documento riporta DHCP <strong>[DISABILITATO]</strong>, indirizzo IP, maschera subnet, gateway, DNS, porta protocollo e MAC ID. Conservare l'indirizzo IP dell'RT: servirà nella Fase 3.</p>
+</div>
+<hr />
+<h2 id="fase-2-configurare-la-comunicazione-con-il-pos-menu-917-pos">Fase 2 - Configurare la comunicazione con il POS (menù 917 POS)</h2>
+<h3 id="11-selezionare-il-menu-917-pos">11. Selezionare il menù 917 POS</h3>
+<p>Dopo la stampa il display torna su <strong>PROGRAMMAZIONE</strong>. Dal tastierino numerico digitare <strong>917</strong> e premere <strong>SBT</strong> per entrare nel menù <strong>[917-POS]</strong>.</p>
+<p><img alt="Display PROGRAMMAZIONE [917-POS]" src="../assets/images/rt-pos-12-programmazione-917.jpg" /></p>
+<h3 id="12-abilitare-la-connessione-ethernet">12. Abilitare la connessione Ethernet</h3>
+<p>La voce <strong>CONNESSIONE ETH</strong> deve essere <strong>[ABILITATO]</strong>. Se non lo è, premere il tasto <strong>00</strong> per spostarsi tra le due opzioni del menù (abilitato/disabilitato), quindi confermare con <strong>SBT</strong>.</p>
+<p><img alt="Display CONNESSIONE ETH [ABILITATO]" src="../assets/images/rt-pos-13-connessione-eth.jpg" /></p>
+<h3 id="13-indirizzo-ip-del-pos">13. Indirizzo IP del POS</h3>
+<p>Alla voce <strong>INDIRIZZO IP</strong> impostare l'indirizzo IP del <strong>dispositivo POS</strong> (es. <code>10.15.22.206</code>), scrivendolo dal tastierino numerico, e confermare con <strong>SBT</strong>.</p>
+<p><img alt="Display INDIRIZZO IP 10.15.22.206" src="../assets/images/rt-pos-14-indirizzo-ip-pos.jpg" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Attenzione</p>
+<p>In questo menù l'indirizzo da inserire è quello del <strong>POS</strong>, non quello del registratore. È un IP <strong>statico</strong> che andrà configurato anche sul dispositivo POS nella Fase 3.</p>
+</div>
+<h3 id="14-porta-di-comunicazione">14. Porta di comunicazione</h3>
+<p>Alla voce <strong>PORTA [1-65535]</strong> digitare la porta di comunicazione (<code>8080</code>) e confermare con <strong>SBT</strong>.</p>
+<p><img alt="Display PORTA [1-65535] 8080" src="../assets/images/rt-pos-15-porta-pos.jpg" /></p>
+<h3 id="15-scontrino-su-pos">15. Scontrino su POS</h3>
+<p>La voce <strong>SCONTRINO SU POS</strong> deve essere <strong>[DISABILITATO]</strong>. Confermare con <strong>SBT</strong>.</p>
+<p><img alt="Display SCONTRINO SU POS [DISABILITATO]" src="../assets/images/rt-pos-16-scontrino-su-pos.jpg" /></p>
+<h3 id="16-controllare-il-documento-gestionale">16. Controllare il documento gestionale</h3>
+<p>L'RT stampa il documento <strong>P(917) POS</strong> con connessione ETH abilitata, indirizzo IP e porta del POS e scontrino su POS disabilitato. Verificare i valori: l'IP del POS servirà nella Fase 3.</p>
+<p><img alt="Documento gestionale P(917) POS" src="../assets/images/rt-pos-31-doc-917.jpg" /></p>
+<h3 id="17-uscire-dalla-programmazione">17. Uscire dalla programmazione</h3>
+<p>Premere due volte il tasto <strong>CHIAVE</strong> per uscire dalla programmazione e tornare in assetto di registrazione (display <code>0,00</code>).</p>
+<p><img alt="Pressione del tasto CHIAVE per uscire" src="../assets/images/rt-pos-32-uscita-programmazione.jpg" /></p>
+<p><img alt="Registratore tornato in assetto di registrazione" src="../assets/images/rt-pos-33-ritorno-registrazione.jpg" /></p>
+<hr />
+<h2 id="fase-3-configurare-il-pos-q10a">Fase 3 - Configurare il POS Q10A</h2>
+<h3 id="18-accedere-al-pos">18. Accedere al POS</h3>
+<p>Spostarsi sul dispositivo POS. Sul display compare la schermata iniziale di Custom Pay con l'importo <code>0,00</code>. Eseguire un <strong>doppio tap nell'angolo in alto a sinistra</strong> del display.</p>
+<p><img alt="Schermata iniziale Custom Pay" src="../assets/images/rt-pos-17-pos-schermata-iniziale.jpg" /></p>
+<h3 id="19-inserire-la-password-dinamica">19. Inserire la password dinamica</h3>
+<p>Viene visualizzata la schermata <strong>Inserisci la password</strong>.</p>
+<p><img alt="Schermata Inserisci la password" src="../assets/images/rt-pos-18-pos-password.jpg" /></p>
+<p>La password è <strong>dinamica</strong> e si compone nel formato <code>mm1gg7</code>: <code>mm</code> = mese corrente, <code>1</code>, <code>gg</code> = giorno odierno, <code>7</code>. Esempio: il 22 ottobre la password è <code>101227</code>. Digitarla con la tastiera numerica e confermare con <strong>OK</strong>.</p>
+<p><img alt="Password inserita 101227" src="../assets/images/rt-pos-19-pos-password-cifre.jpg" /></p>
+<h3 id="20-impostare-la-rete-ethernet-del-pos">20. Impostare la rete Ethernet del POS</h3>
+<p>Aprire le <strong>IMPOSTAZIONI</strong>: qui la password è <strong>fissa</strong>, tramite tastiera numerica inserire la seguente password: <strong>pax9876@@</strong> 
+(vedere il <a href="../assets/resources/0576100M000218_2.00.pdf">paragrafo 2.3 del manuale</a>). Selezionare <strong>Rete e Internet</strong>.</p>
+<p><img alt="Impostazioni - Rete e Internet" src="../assets/images/rt-pos-20-pos-impostazioni-rete.jpg" /></p>
+<p>Selezionare la voce <strong>Ethernet</strong>: la modalità deve essere <strong>Static IP</strong>.</p>
+<p><img alt="Ethernet - Static IP" src="../assets/images/rt-pos-21-pos-ethernet-static.jpg" /></p>
+<p>Nella finestra <strong>Static configure</strong> inserire l'indirizzo IP già impostato sulla parte fiscale nel menù <strong>917</strong> (nell'esempio <code>10.15.22.206</code>), insieme agli altri parametri di rete (maschera subnet, gateway, DNS), e confermare con <strong>OK</strong>.</p>
+<p><img alt="Finestra Static configure" src="../assets/images/rt-pos-22-pos-static-configure.jpg" /></p>
+<p>Se i parametri sono già stati impostati in precedenza, non serve ripetere l'operazione: nella schermata <strong>Ethernet settings</strong> si vedono i campi già compilati.</p>
+<p><img alt="Ethernet settings con i parametri impostati" src="../assets/images/rt-pos-23-pos-ethernet-parametri.jpg" /></p>
+<h3 id="21-aprire-pax-tools">21. Aprire PAX Tools</h3>
+<p>Premere il <strong>pulsante centrale (tondo)</strong> per tornare al menù principale e aprire <strong>Applicazioni</strong>, poi <strong>PAX Tools</strong>.</p>
+<p><img alt="Schermata Applicazioni" src="../assets/images/rt-pos-24-pos-applicazioni.jpg" /></p>
+<p>Inserire la <strong>password installatore</strong>, sempre uguale (vedere il <a href="../assets/resources/0576100M000218_2.00.pdf">capitolo 5 del manuale</a>), e confermare con <strong>OK</strong>.</p>
+<p><img alt="Schermata password installatore" src="../assets/images/rt-pos-25-pos-password-installatore.jpg" /></p>
+<h3 id="22-configurare-lecr-protocollo-17">22. Configurare l'ECR (protocollo 17)</h3>
+<p>Premere <strong>CONFIGURA ECR</strong> e selezionare <strong>ECR 17</strong>. Sono presenti anche le <strong>ALTRE OPZIONI</strong>.</p>
+<p><img alt="Configurazione ECR" src="../assets/images/rt-pos-26-pos-configurazione-ecr.jpg" /></p>
+<p>Aprire <strong>CONFIGURA LA LINEA</strong> e controllare i parametri:</p>
+<ul>
+<li><strong>Tipo di linea</strong>: TCP</li>
+<li><strong>Porta terminale</strong>: <code>8080</code></li>
+<li><strong>IP terminale</strong>: viene compilato automaticamente dal dispositivo POS</li>
+</ul>
+<p><img alt="Configura la linea" src="../assets/images/rt-pos-27-pos-configura-linea.jpg" /></p>
+<h3 id="23-inserire-lip-del-registratore">23. Inserire l'IP del registratore</h3>
+<p>Premere <strong>IP cassa</strong> e digitare l'indirizzo IP della <strong>parte fiscale</strong> impostato nel menù <strong>911</strong> (nell'esempio <code>10.15.22.210</code>). Confermare con <strong>OK</strong> (o <strong>FINE</strong>) e tornare indietro con il pulsante tondo.</p>
+<p><img alt="IP cassa 10.15.22.210" src="../assets/images/rt-pos-28-pos-ip-cassa.jpg" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Dove trovare l'IP</p>
+<p>L'indirizzo dell'RT è riportato nel documento gestionale <strong>P(911) Ethernet</strong> stampato nella Fase 1.</p>
+</div>
+<h3 id="24-verifica-finale">24. Verifica finale</h3>
+<p>Quando il display del POS mostra la stessa dicitura che appare sul display operatore del registratore (<strong>OMNI ONE</strong>), RT e POS sono configurati correttamente.</p>
+<p><img alt="POS pronto, schermata OMNI ONE" src="../assets/images/rt-pos-29-pos-fine.jpg" /></p>
+<hr />
+<h2 id="riepilogo-dei-collegamenti">Riepilogo dei collegamenti</h2>
+<table>
+<thead>
+<tr>
+<th>Dove</th>
+<th>Parametro</th>
+<th>Valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RT - menù 911</td>
+<td>Indirizzo IP</td>
+<td>IP del <strong>registratore</strong></td>
+</tr>
+<tr>
+<td>RT - menù 917</td>
+<td>Indirizzo IP</td>
+<td>IP del <strong>POS</strong></td>
+</tr>
+<tr>
+<td>POS - Static IP</td>
+<td>IP address</td>
+<td>IP del <strong>POS</strong> (lo stesso del menù 917)</td>
+</tr>
+<tr>
+<td>POS - PAX Tools</td>
+<td>IP cassa</td>
+<td>IP del <strong>registratore</strong> (lo stesso del menù 911)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="approfondimenti">Approfondimenti</h2>
+<ul>
+<li><a href="../q10a-comunicazione-pos/">Configurazione carte</a></li>
+<li><a href="../assets/resources/0576100M000218_2.00.pdf">Manuale di configurazione Q10A (PDF)</a></li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Precedente: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../omni-one-guida-introduttiva/" class="md-footer__link md-footer__link--next" aria-label="Successivo: Guida introduttiva OMNI ONE">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                Guida introduttiva OMNI ONE
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright Custom S.p.A 2026
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1345 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Custom S.p.A.">
+      
+      
+        <link rel="canonical" href="https://github.com/custom-spa/omni-one.git/">
+      
+      
+      
+        <link rel="next" href="configurazione-rt-pos/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/icons/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>OMNI-ONE - Registratore Telematico con pagamento elettronico integrato - OMNI ONE</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#omni-one" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href="." title="OMNI ONE" class="md-header__button md-logo" aria-label="OMNI ONE" data-md-component="logo">
+      
+  <img src="assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OMNI ONE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OMNI-ONE - Registratore Telematico con pagamento elettronico integrato
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Condividi" aria-label="Condividi" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="configurazione-rt-pos/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Configurazione RT/POS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="omni-one-guida-introduttiva/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guida all'uso Omni ONE
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="q10a-comunicazione-pos/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Configurazione POS Q10A
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="OMNI ONE" class="md-nav__button md-logo" aria-label="OMNI ONE" data-md-component="logo">
+      
+  <img src="assets/icons/logo.png" alt="logo">
+
+    </a>
+    OMNI ONE
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#punti-di-forza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punti di forza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#il-prodotto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Il prodotto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specifiche-tecniche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specifiche tecniche
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Specifiche tecniche">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architettura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architettura
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stampante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stampante
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Display
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funzioni-fiscali-e-commerciali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funzioni fiscali e commerciali
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-e-protocolli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software e protocolli
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagamenti-integrati" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagamenti integrati
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alimentazione-dimensioni-e-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alimentazione, dimensioni e ambiente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#porte-e-connettori" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Porte e connettori
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelli-e-accessori" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelli e accessori
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dove-si-usa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dove si usa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentazione-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentazione tecnica
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configurazione-rt-pos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configurazione RT/POS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="omni-one-guida-introduttiva/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guida all'uso Omni ONE
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="q10a-comunicazione-pos/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configurazione POS Q10A
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#punti-di-forza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punti di forza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#il-prodotto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Il prodotto
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specifiche-tecniche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specifiche tecniche
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Specifiche tecniche">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architettura" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architettura
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stampante" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stampante
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Display
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#funzioni-fiscali-e-commerciali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Funzioni fiscali e commerciali
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#software-e-protocolli" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Software e protocolli
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pagamenti-integrati" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagamenti integrati
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alimentazione-dimensioni-e-ambiente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alimentazione, dimensioni e ambiente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#porte-e-connettori" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Porte e connettori
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#modelli-e-accessori" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modelli e accessori
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dove-si-usa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dove si usa
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentazione-tecnica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentazione tecnica
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<!-- categoria assegnata per inferenza: verificare -->
+<!-- specifiche tratte dalla scheda prodotto OMNI-ONE Rev. 1.00 09/2026, dal sito custom.biz e dalla guida introduttiva Rev. 1.10 -->
+
+<h1 id="omni-one">OMNI-ONE</h1>
+<p><strong>Registratore telematico mobile con modulo di pagamento integrato</strong></p>
+<p><img alt="OMNI-ONE - Registratore Telematico" src="assets/images/omni-one-hero.jpg" /></p>
+<p>OMNI-ONE è il registratore telematico affidabile, semplice da installare e facile da trasportare, pensato per gestire le operazioni di vendita e la trasmissione dei corrispettivi con continuità anche fuori dal negozio. Il modulo di pagamento integrato accetta transazioni <strong>chip &amp; PIN</strong> e <strong>contactless</strong> direttamente dal dispositivo, <strong>senza POS esterno</strong>.</p>
+<p><a href="assets/resources/OMNI-ONE-datasheet.pdf">Scarica la scheda prodotto (PDF)</a></p>
+<h2 id="punti-di-forza">Punti di forza</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mobilità quotidiana</strong></td>
+<td>Pensato per vendite itineranti, mercati, fiere e attività fuori sede. Formato ultra-compatto, facile da trasportare, installare e integrare anche in spazi ridotti.</td>
+</tr>
+<tr>
+<td><strong>Autonomia estesa</strong></td>
+<td>Predisposizione per batteria esterna opzionale a lunga durata, ideale dove non c'è alimentazione fissa.</td>
+</tr>
+<tr>
+<td><strong>Pagamenti integrati</strong></td>
+<td>Modulo di pagamento Custom Pay con certificazioni PCI PTS 6.x SRED ed EMV L1/L2: nessun POS esterno da gestire.</td>
+</tr>
+<tr>
+<td><strong>Connettività integrata</strong></td>
+<td>Wi-Fi, USB ed Ethernet per collegarsi facilmente a dispositivi e gestionali.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="il-prodotto">Il prodotto</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:1em 0;">
+  <img src="assets/images/omni-one-fronte-tastiera.png" alt="OMNI-ONE - vista frontale con tastiera" style="width:100%;height:260px;object-fit:contain;background:#fff;border-radius:8px;padding:8px;">
+  <img src="assets/images/omni-one-tastiera-3q.png" alt="OMNI-ONE - tastiera e display operatore" style="width:100%;height:260px;object-fit:contain;background:#fff;border-radius:8px;padding:8px;">
+  <img src="assets/images/omni-one-display-cliente-3q.png" alt="OMNI-ONE - display cliente e modulo di pagamento" style="width:100%;height:260px;object-fit:contain;background:#fff;border-radius:8px;padding:8px;">
+  <img src="assets/images/omni-one-retro-display-cliente.png" alt="OMNI-ONE - lato cliente con modulo di pagamento" style="width:100%;height:260px;object-fit:contain;background:#fff;border-radius:8px;padding:8px;">
+  <img src="assets/images/omni-one-vista-superiore.png" alt="OMNI-ONE - vista superiore" style="width:100%;height:260px;object-fit:contain;background:#fff;border-radius:8px;padding:8px;">
+  <img src="assets/images/omni-one-retro-connettori.png" alt="OMNI-ONE - pannello connettori" style="width:100%;height:260px;object-fit:contain;background:#fff;border-radius:8px;padding:8px;">
+  <img src="assets/images/omni-one-vano-batteria.png" alt="OMNI-ONE - vano batteria" style="width:100%;height:260px;object-fit:contain;background:#fff;border-radius:8px;padding:8px;">
+  <img src="assets/images/omni-one-display-cliente-lato.png" alt="OMNI-ONE - vista laterale" style="width:100%;height:260px;object-fit:contain;background:#fff;border-radius:8px;padding:8px;">
+</div>
+
+<h2 id="specifiche-tecniche">Specifiche tecniche</h2>
+<h3 id="architettura">Architettura</h3>
+<table>
+<thead>
+<tr>
+<th>Caratteristica</th>
+<th>Valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Processore</td>
+<td>800 MHz Arm® Cortex®-M7 (iMX RT1171)</td>
+</tr>
+<tr>
+<td>Memoria flash</td>
+<td>128 MB</td>
+</tr>
+<tr>
+<td>RAM</td>
+<td>8 MB</td>
+</tr>
+<tr>
+<td>Data buffer</td>
+<td>16 KB</td>
+</tr>
+<tr>
+<td>Giornale elettronico</td>
+<td>Scheda MicroSD interna</td>
+</tr>
+<tr>
+<td>Connettività</td>
+<td>Wi-Fi®, Ethernet, USB</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stampante">Stampante</h3>
+<table>
+<thead>
+<tr>
+<th>Caratteristica</th>
+<th>Valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tecnologia</td>
+<td>Termica, testina fissa</td>
+</tr>
+<tr>
+<td>Risoluzione</td>
+<td>203 dpi (8 dot/mm)</td>
+</tr>
+<tr>
+<td>Velocità di stampa (max)</td>
+<td>80 mm/s</td>
+</tr>
+<tr>
+<td>Larghezza carta</td>
+<td>57 mm ± 0,5 mm</td>
+</tr>
+<tr>
+<td>Grammatura carta</td>
+<td>da 55 a 60 g/m²</td>
+</tr>
+<tr>
+<td>Sensori</td>
+<td>Presenza carta, temperatura della testina di stampa</td>
+</tr>
+<tr>
+<td>Vita della testina</td>
+<td>51 km con carta consigliata</td>
+</tr>
+<tr>
+<td>Personalizzazione</td>
+<td>Loghi grafici in alto e in basso dello scontrino</td>
+</tr>
+</tbody>
+</table>
+<h3 id="display">Display</h3>
+<table>
+<thead>
+<tr>
+<th>Lato</th>
+<th>Tipo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operatore</td>
+<td>LCD retroilluminato 2x20 integrato</td>
+</tr>
+<tr>
+<td>Cliente</td>
+<td>LCD grafico da 3,2"</td>
+</tr>
+</tbody>
+</table>
+<h3 id="funzioni-fiscali-e-commerciali">Funzioni fiscali e commerciali</h3>
+<table>
+<thead>
+<tr>
+<th>Caratteristica</th>
+<th>Valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PLU</td>
+<td>Fino a 1000, con codice EAN</td>
+</tr>
+<tr>
+<td>Tipi di pagamento</td>
+<td>14</td>
+</tr>
+<tr>
+<td>Aliquote IVA</td>
+<td>12 (5 programmabili + 6 codici di natura normativa + ventilazione IVA)</td>
+</tr>
+<tr>
+<td>Modificatori di prezzo</td>
+<td>Sconti e maggiorazioni su articolo e subtotale, in valore e percentuale</td>
+</tr>
+<tr>
+<td>Report</td>
+<td>Fiscali, finanziari, statistici e storici sulle vendite</td>
+</tr>
+<tr>
+<td>Trasmissione corrispettivi</td>
+<td>Telematica all'Agenzia delle Entrate (file XML) a ogni chiusura fiscale</td>
+</tr>
+</tbody>
+</table>
+<h3 id="software-e-protocolli">Software e protocolli</h3>
+<table>
+<thead>
+<tr>
+<th>Caratteristica</th>
+<th>Valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Protocolli</td>
+<td>CUSTOM, CUSTOM DLL, XON/XOFF</td>
+</tr>
+<tr>
+<td>Driver e librerie</td>
+<td>Libreria Windows® e OPOS, JavaPOS, POS.net</td>
+</tr>
+<tr>
+<td>Strumenti</td>
+<td>RX Configurator</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pagamenti-integrati">Pagamenti integrati</h3>
+<table>
+<thead>
+<tr>
+<th>Caratteristica</th>
+<th>Valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Modulo POS</td>
+<td>Custom Pay (POS Q10A) integrato</td>
+</tr>
+<tr>
+<td>Modalità</td>
+<td>Chip &amp; PIN e contactless</td>
+</tr>
+<tr>
+<td>Certificazioni</td>
+<td>PCI PTS 6.x SRED, EMV L1 &amp; L2, EMV Contactless L1, Visa payWave, Mastercard contactless, UPI qUICS, Amex ExpressPay, Discover D-PAS, JCB J/Speedy, TQM, RoHS</td>
+</tr>
+</tbody>
+</table>
+<h3 id="alimentazione-dimensioni-e-ambiente">Alimentazione, dimensioni e ambiente</h3>
+<table>
+<thead>
+<tr>
+<th>Caratteristica</th>
+<th>Valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Alimentazione</td>
+<td>9 Vdc, 3 A (alimentatore da 100 a 240 Vac, 50-60 Hz)</td>
+</tr>
+<tr>
+<td>Batteria</td>
+<td>Predisposizione per batteria esterna integrabile (opzionale)</td>
+</tr>
+<tr>
+<td>Dimensioni (L × P × A)</td>
+<td>140 × 304 × 98 mm</td>
+</tr>
+<tr>
+<td>Peso</td>
+<td>1,1 kg</td>
+</tr>
+<tr>
+<td>Temperatura di funzionamento</td>
+<td>da -5 °C a +45 °C</td>
+</tr>
+<tr>
+<td>Umidità relativa</td>
+<td>da 10 % a 85 % (senza condensa)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="porte-e-connettori">Porte e connettori</h3>
+<p>Ethernet, USB tipo A, seriale RS232, porta per cassetto rendiresto e ingresso di alimentazione sono raccolti nel pannello connettori. Per la descrizione completa del dispositivo vedere la <a href="omni-one-guida-introduttiva/#descrizione-del-dispositivo">guida introduttiva</a>.</p>
+<h2 id="modelli-e-accessori">Modelli e accessori</h2>
+<table>
+<thead>
+<tr>
+<th>P/N</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>921PL020200L33</td>
+<td><strong>OMNI-ONE</strong> ETH USB WIFI CPAY</td>
+</tr>
+<tr>
+<td>976PL020000001</td>
+<td>Batteria esterna integrabile EDGE-K</td>
+</tr>
+<tr>
+<td>97BZZ010000032</td>
+<td>DET MEM 3 MLN uSD GEN 5</td>
+</tr>
+<tr>
+<td>97BZZ010000033</td>
+<td>DET MEM 6 MLN uSD GEN 5</td>
+</tr>
+<tr>
+<td>97BZZ010000034</td>
+<td>DET MEM 12 MLN uSD GEN 5</td>
+</tr>
+<tr>
+<td>971GF010010026</td>
+<td>Cassetto in metallo 6V</td>
+</tr>
+</tbody>
+</table>
+<h2 id="dove-si-usa">Dove si usa</h2>
+<ul>
+<li>Ambulanti e mercati rionali</li>
+<li>Street food e food truck</li>
+<li>Artigiani e servizi onsite</li>
+<li>Fiere ed eventi temporanei</li>
+<li>Vendita itinerante e mobile</li>
+</ul>
+<h2 id="documentazione-tecnica">Documentazione tecnica</h2>
+<table>
+<thead>
+<tr>
+<th>Sezione</th>
+<th>Contenuto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="configurazione-rt-pos/">Configurazione RT/POS</a></td>
+<td>Procedura passo per passo con immagini: rete dell'RT, comunicazione con il POS, configurazione del Q10A</td>
+</tr>
+<tr>
+<td><a href="omni-one-guida-introduttiva/">Guida introduttiva OMNI ONE</a></td>
+<td>Descrizione del dispositivo, assetti operativi, rendiconti, codici brevi, pulizia, specifiche e sicurezza</td>
+</tr>
+<tr>
+<td><a href="q10a-comunicazione-pos/">Configurazione carte</a></td>
+<td>Installazione dell'applicazione CARTE sul POS Q10A: Terminal ID, codice azienda, connessione e certificato</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Documento</th>
+<th>Codice</th>
+<th>Versione</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OMNI-ONE - Scheda prodotto</td>
+<td>-</td>
+<td>Rev. 1.00 (09/2026)</td>
+<td><a href="assets/resources/OMNI-ONE-datasheet.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>OMNI ONE - Guida introduttiva</td>
+<td>0578100M000101</td>
+<td>Rev. 1.10</td>
+<td><a href="assets/resources/0578100M000101_1.10.pdf">PDF</a></td>
+</tr>
+<tr>
+<td>Q10A - Manuale di configurazione</td>
+<td>0576100M000218</td>
+<td>Rev. 2.00</td>
+<td><a href="assets/resources/0576100M000218_2.00.pdf">PDF</a></td>
+</tr>
+</tbody>
+</table>
+<p>Per informazioni sul prodotto: <a href="https://www.custom.biz/products/registratori-telematici-pagamento-integrato/omni-one">www.custom.biz</a> - assistenza tecnica: <a href="https://www.custom4u.it">www.custom4u.it</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+        
+          
+          <a href="configurazione-rt-pos/" class="md-footer__link md-footer__link--next" aria-label="Successivo: Configurazione RT/POS">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                Configurazione RT/POS
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright Custom S.p.A 2026
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>

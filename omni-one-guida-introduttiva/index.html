@@ -1,0 +1,1583 @@
+
+<!doctype html>
+<html lang="it" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Custom S.p.A.">
+      
+      
+        <link rel="canonical" href="https://github.com/custom-spa/omni-one.git/omni-one-guida-introduttiva/">
+      
+      
+        <link rel="prev" href="../configurazione-rt-pos/">
+      
+      
+        <link rel="next" href="../q10a-comunicazione-pos/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/icons/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>OMNI ONE - Guida introduttiva - OMNI ONE</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue-grey" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#omni-one-guida-introduttiva" class="md-skip">
+          Vai al contenuto
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Intestazione">
+    <a href=".." title="OMNI ONE" class="md-header__button md-logo" aria-label="OMNI ONE" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OMNI ONE
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              OMNI ONE - Guida introduttiva
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Cerca" placeholder="Cerca" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Cerca">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Condividi" aria-label="Condividi" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Cancella" aria-label="Cancella" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inizializza la ricerca
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../configurazione-rt-pos/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Configurazione RT/POS
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Guida all'uso Omni ONE
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../q10a-comunicazione-pos/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Configurazione POS Q10A
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigazione" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OMNI ONE" class="md-nav__button md-logo" aria-label="OMNI ONE" data-md-component="logo">
+      
+  <img src="../assets/icons/logo.png" alt="logo">
+
+    </a>
+    OMNI ONE
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configurazione-rt-pos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configurazione RT/POS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guida all'uso Omni ONE
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guida all'uso Omni ONE
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guida introduttiva OMNI ONE
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guida introduttiva OMNI ONE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descrizione-del-dispositivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descrizione del dispositivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accensione-spegnimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accensione / spegnimento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caricamento-della-carta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caricamento della carta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gli-assetti-operativi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gli assetti operativi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendiconti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendiconti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chiusure-azzeramenti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chiusure / azzeramenti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regolazione-data-e-orario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regolazione data e orario
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codici-brevi-delle-funzioni" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Codici brevi delle funzioni
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#periodo-inattivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Periodo inattivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esaurimento-memoria-permanente-di-dettaglio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Esaurimento memoria permanente di dettaglio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pulizia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pulizia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specifiche-tecniche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specifiche tecniche
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guida-alle-segnalazioni-di-stato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guida alle segnalazioni di stato
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informazioni-generali-sulla-sicurezza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Informazioni generali sulla sicurezza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contatti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contatti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pagine-originali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagine originali
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../q10a-comunicazione-pos/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configurazione POS Q10A
+  
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Indice">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indice
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#descrizione-del-dispositivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Descrizione del dispositivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#accensione-spegnimento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accensione / spegnimento
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caricamento-della-carta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caricamento della carta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gli-assetti-operativi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gli assetti operativi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendiconti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Rendiconti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chiusure-azzeramenti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chiusure / azzeramenti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#regolazione-data-e-orario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Regolazione data e orario
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codici-brevi-delle-funzioni" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Codici brevi delle funzioni
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#periodo-inattivo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Periodo inattivo
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#esaurimento-memoria-permanente-di-dettaglio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Esaurimento memoria permanente di dettaglio
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pulizia" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pulizia
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#specifiche-tecniche" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specifiche tecniche
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#guida-alle-segnalazioni-di-stato" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guida alle segnalazioni di stato
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informazioni-generali-sulla-sicurezza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Informazioni generali sulla sicurezza
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contatti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contatti
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pagine-originali" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pagine originali
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="Navigazione" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href=".." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    Home
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="./" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Guida all'uso Omni ONE
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<!-- categoria assegnata per inferenza: verificare -->
+
+<h1 id="omni-one-guida-introduttiva">OMNI ONE - Guida introduttiva</h1>
+<p>Guida introduttiva del registratore telematico <strong>OMNI ONE</strong> (codice 0578100M000101, Rev. 1.10).</p>
+<p><a href="../assets/resources/0578100M000101_1.10.pdf">Scarica la guida introduttiva (PDF)</a></p>
+<h2 id="descrizione-del-dispositivo">Descrizione del dispositivo</h2>
+<ol>
+<li>Sportello vano carta</li>
+<li>Pulsante di sblocco sportello vano carta</li>
+<li>Uscita carta</li>
+<li>Display lato operatore</li>
+<li>Tastiera</li>
+<li>Display lato cliente integrato nel modulo di pagamento</li>
+<li>Tasto di accensione/spegnimento</li>
+<li>Pannello connettori</li>
+<li>Sportello di servizio (riservato esclusivamente all'assistenza tecnica)</li>
+<li>Coperchio batteria</li>
+<li>Linguetta di sblocco coperchio batteria</li>
+<li>Porta Ethernet</li>
+<li>Porta cassetto rendiresto</li>
+<li>Porta seriale RS232</li>
+<li>Porta USB tipo A</li>
+<li>Porta di alimentazione</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Attenzione</p>
+<p>Lo sportello di servizio (9) è riservato esclusivamente all'assistenza tecnica. È quindi vietata la sua apertura poiché comporterebbe l'inibizione all'utilizzo e quindi il blocco del dispositivo.</p>
+</div>
+<h2 id="accensione-spegnimento">Accensione / spegnimento</h2>
+<ul>
+<li>Collegare l'adattatore di rete in dotazione al dispositivo ed alla presa di rete. Utilizzare il tipo di alimentazione elettrica indicato sull'etichetta del dispositivo.</li>
+<li>Accendere il dispositivo premendo il tasto ON/OFF. Dopo alcuni istanti il dispositivo è pronto.</li>
+<li>Spegnere il dispositivo premendo il tasto ON/OFF.</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Attenzione</p>
+<p>Alla prima accensione o dopo oltre 6 mesi di inattività, collegarlo alla rete, accenderlo e lasciarlo caricare per almeno 2 ore. Prima di scollegare l'alimentazione per lunghi periodi, spegnere il dispositivo con il tasto ON/OFF ed attendere il completo spegnimento.</p>
+</div>
+<h2 id="caricamento-della-carta">Caricamento della carta</h2>
+<ol>
+<li>La condizione di carta mancante viene evidenziata mediante un messaggio sul display.</li>
+<li>Premere il pulsante di sblocco dello sportello vano carta.</li>
+<li>Aprire lo sportello vano carta.</li>
+<li>Inserire il rotolo nel vano carta rispettando il verso di rotazione indicato e far uscire la carta per alcuni centimetri. Utilizzare solo rotoli di carta omologati.</li>
+<li>Chiudere lo sportello vano carta.</li>
+</ol>
+<h2 id="gli-assetti-operativi">Gli assetti operativi</h2>
+<p>La macchina dispone di quattro assetti operativi, ciascuno dei quali consente di eseguire un gruppo omogeneo di funzioni, ed un assetto in cui la macchina è inattiva. Il passaggio da un assetto all'altro si effettua premendo il tasto evidenziato sul display nella sequenza riportata nella tabella seguente.</p>
+<table>
+<thead>
+<tr>
+<th>Display</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REGISTRAZIONE</td>
+<td>Assetto Registrazione: permette di effettuare le operazioni di vendita e di cassa.</td>
+</tr>
+<tr>
+<td>LETTURA</td>
+<td>Assetto Lettura: permette di stampare tutti i rapporti gestionali (senza azzerare il contenuto dei totalizzatori).</td>
+</tr>
+<tr>
+<td>AZZERAMENTO</td>
+<td>Assetto Azzeramento: permette di effettuare l'azzeramento fiscale di fine giornata e l'azzeramento dei totalizzatori periodici.</td>
+</tr>
+<tr>
+<td>PROGRAMMAZIONE</td>
+<td>Assetto Programmazione: permette di impostare tutti i parametri operativi e le opzioni funzionali del dispositivo.</td>
+</tr>
+<tr>
+<td>CASSA CHIUSA</td>
+<td>Non permette di eseguire alcuna operazione.</td>
+</tr>
+</tbody>
+</table>
+<p>Se la gestione operatori è attiva, l'accesso ai singoli assetti può essere consentito agli operatori appositamente abilitati. In questo caso, ogni volta che il dispositivo viene messo in assetto "Cassa chiusa", per poter effettuare nuove operazioni è necessario inserire un codice operatore.</p>
+<h2 id="rendiconti">Rendiconti</h2>
+<p>Spostarsi in assetto operativo <strong>Lettura</strong> per eseguire le letture e le stampe dei totalizzatori della macchina. Le operazioni eseguite in questo assetto operativo non cancellano e non alterano in nessun modo gli archivi e i totalizzatori in cui sono memorizzati i dati.</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Sequenza tasti</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stampa lista rendiconti disponibili</td>
+<td><code>00</code> + SBT</td>
+</tr>
+<tr>
+<td>Stampa documento gestionale giornaliero</td>
+<td>TOT</td>
+</tr>
+<tr>
+<td>Stampa rapporto finanziario generale</td>
+<td><code>10</code> + SBT</td>
+</tr>
+<tr>
+<td>Visualizza netto fiscale</td>
+<td><code>05</code> + SBT</td>
+</tr>
+<tr>
+<td>Visualizza totale cassetto</td>
+<td><code>06</code> + SBT</td>
+</tr>
+</tbody>
+</table>
+<h2 id="chiusure-azzeramenti">Chiusure / azzeramenti</h2>
+<p>Spostarsi in assetto operativo <strong>Azzeramento</strong> per effettuare la lettura e l'azzeramento dei totalizzatori. Al termine di ogni stampa, i totalizzatori ed i contatori stampati sono riportati a zero. La stampa della lista azzeramenti disponibili non azzera alcun contatore.</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Sequenza tasti</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stampa lista azzeramenti disponibili</td>
+<td><code>00</code> + SBT</td>
+</tr>
+<tr>
+<td>Chiusura giornaliera con trasmissione corrispettivi telematici</td>
+<td>TOT oppure <code>01</code> + SBT</td>
+</tr>
+</tbody>
+</table>
+<p>Quando la memoria di riepilogo è in via di esaurimento, all'inizio dello scontrino di chiusura fiscale viene stampato il numero di chiusure ancora effettuabili.</p>
+<h2 id="regolazione-data-e-orario">Regolazione data e orario</h2>
+<div class="admonition warning">
+<p class="admonition-title">Attenzione</p>
+<p>Le operazioni di cambio data e orario nei dispositivi fiscali sono disciplinate dalla vigente normativa che prevede l'impossibilità di retrocedere rispetto alla data dell'ultimo azzeramento fiscale eseguito. Si prega quindi di prestare la massima attenzione a quest'operazione accertandosi di non confermare date superiori a quella in corso. Nel caso si osservi sul dispositivo fiscale una data superiore a quella in corso, si prega di prendere contatto al più presto con il centro assistenza tecnica per concordare un intervento. Un errore nell'impostazione della data genera uno stato di non conformità del dispositivo fiscale, irreversibile e soprattutto sanzionabile dai preposti organismi di controllo.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Funzione</th>
+<th>Assetto</th>
+<th>Sequenza</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Regolazione data (es. 01.01.2026)</td>
+<td>AZZERAMENTO, poi PROGRAMMAZIONE</td>
+<td><code>01</code> + SBT, poi <code>011</code> + SBT, poi <code>010126</code> + SBT</td>
+</tr>
+<tr>
+<td>Regolazione orario (es. 10:00)</td>
+<td>AZZERAMENTO, poi PROGRAMMAZIONE</td>
+<td><code>01</code> + SBT, poi <code>010</code> + SBT, poi <code>1000</code> + SBT</td>
+</tr>
+</tbody>
+</table>
+<p>Il dispositivo permette di abilitare il passaggio automatico tra ora legale e ora solare. Contattare il vostro rivenditore.</p>
+<h2 id="codici-brevi-delle-funzioni">Codici brevi delle funzioni</h2>
+<p>Attraverso i codici brevi è possibile accedere rapidamente ad alcune funzioni del dispositivo che non sono direttamente disponibili in tastiera. I codici brevi possono essere usati solo in assetto registrazione. È possibile ottenere la lista completa delle funzioni programmate sul dispositivo digitando <code>002</code> + SBT dopo essere entrati nell'assetto operativo "Programmazione".</p>
+<table>
+<thead>
+<tr>
+<th>Funzione</th>
+<th>Sequenza tasti</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scontrino dematerializzato ON</td>
+<td><code>1012</code> +</td>
+</tr>
+<tr>
+<td>Scontrino dematerializzato OFF</td>
+<td><code>1013</code> +</td>
+</tr>
+<tr>
+<td>Annullo telematico dell'ultima vendita</td>
+<td><code>1015</code> +</td>
+</tr>
+<tr>
+<td>Codice fiscale / Partita IVA</td>
+<td><code>1144</code> +</td>
+</tr>
+<tr>
+<td>Codice ATECO</td>
+<td><code>1150</code> +</td>
+</tr>
+<tr>
+<td>Forza scaricamento chiavi lotteria</td>
+<td><code>1180</code> +</td>
+</tr>
+<tr>
+<td>Sconti/maggiorazioni (da 1 a 8)</td>
+<td>Da <code>1501</code> + a <code>1508</code> +</td>
+</tr>
+<tr>
+<td>Saldo su acconto</td>
+<td><code>1518</code> +</td>
+</tr>
+<tr>
+<td>Omaggio</td>
+<td><code>1519</code> +</td>
+</tr>
+<tr>
+<td>Reparti diretti (da 1 a 30)</td>
+<td>Da <code>1701</code> + a <code>1730</code> +</td>
+</tr>
+<tr>
+<td>Contante</td>
+<td><code>1901</code> +</td>
+</tr>
+<tr>
+<td>Modalità di pagamento assegno</td>
+<td><code>1902</code> +</td>
+</tr>
+<tr>
+<td>Modalità di pagamento elettronico</td>
+<td><code>1903</code> +</td>
+</tr>
+<tr>
+<td>Modalità di pagamento generico</td>
+<td><code>1904</code> +</td>
+</tr>
+<tr>
+<td>Modalità di pagamento buono pasto</td>
+<td><code>1905</code> +</td>
+</tr>
+<tr>
+<td>Modalità di pagamento sospeso</td>
+<td><code>1906</code> +</td>
+</tr>
+<tr>
+<td>Modalità di pagamento gift card</td>
+<td><code>1907</code> +</td>
+</tr>
+<tr>
+<td>Modalità di pagamento digitale</td>
+<td><code>1908</code> +</td>
+</tr>
+<tr>
+<td>Modalità di pagamento CustomPay</td>
+<td><code>1909</code> +</td>
+</tr>
+<tr>
+<td>Modalità di ritiro usato</td>
+<td><code>1910</code> +</td>
+</tr>
+<tr>
+<td>Modalità di pagamento bonifico</td>
+<td><code>1911</code> +</td>
+</tr>
+<tr>
+<td>Pagamento non riscosso servizi (generico)</td>
+<td><code>1912</code> +</td>
+</tr>
+<tr>
+<td>Pagamento non riscosso servizi fatture</td>
+<td><code>1913</code> +</td>
+</tr>
+<tr>
+<td>Pagamento non riscosso DCR a SSN (distinta contabile farmacie)</td>
+<td><code>1914</code> +</td>
+</tr>
+<tr>
+<td>Sconto a pagare</td>
+<td><code>1915</code> +</td>
+</tr>
+<tr>
+<td>Omaggio - emissione reso card</td>
+<td><code>1916</code> +</td>
+</tr>
+</tbody>
+</table>
+<h2 id="periodo-inattivo">Periodo inattivo</h2>
+<p>Dopo ogni chiusura fiscale il dispositivo effettua la trasmissione telematica dei corrispettivi all'Agenzia delle Entrate tramite l'invio di un file XML. Nei periodi di prolungata inattività, quando cioè il dispositivo rimane spento ed intercorrono più di 24 ore dall'ultima trasmissione telematica, il dispositivo si comporta come segue:</p>
+<ol>
+<li>All'accensione, impone l'esecuzione di una chiusura fiscale mediante avviso stampato su documento gestionale.</li>
+<li>Il display visualizzerà il messaggio e la richiesta di conferma dell'invio dei corrispettivi a zero del periodo compreso tra l'ultima chiusura e il momento dell'accensione mediante la pressione di uno dei due tasti (TOTALE / FEED).</li>
+<li>Alla pressione del tasto di conferma il display visualizzerà in sequenza i messaggi di invio in corso e l'esito dell'invio.</li>
+<li>Al termine dell'invio dei corrispettivi relativi al periodo di inattività viene stampato il documento gestionale dell'esito.</li>
+</ol>
+<h2 id="esaurimento-memoria-permanente-di-dettaglio">Esaurimento memoria permanente di dettaglio</h2>
+<p>L'esaurimento della memoria permanente di dettaglio viene segnalato quando rimane meno del 10% di spazio disponibile. Il dispositivo stampa il messaggio "M. DETT. IN ESAURIMENTO" in coda sul primo documento commerciale emesso che ha superato la soglia, in coda ad ogni chiusura fiscale che viene eseguita ed all'accensione del dispositivo.</p>
+<p>Una volta esaurito tutto lo spazio, viene stampato un documento commerciale con la scritta "M. DETT. IN ESAURIMENTO", il dispositivo resta in attesa di una conferma. Da questo momento non è più possibile emettere documenti commerciali di vendita. Una volta confermato, sul display compare il messaggio "M. DETT. IN ESAURIMENTO, EFFETTUARE CHIUSURA FISCALE".</p>
+<p>Effettuata la chiusura fiscale viene inviato automaticamente l'evento di FUORI SERVIZIO per memoria esaurita. Il dispositivo stampa un documento gestionale con la scritta: <strong><em>ATTENZIONE</em></strong> MEMORIA DI DETTAGLIO ESAURITA! SI RICORDA DI ESEGUIRE L'ESPORTAZIONE DELLA MEMORIA DI DETTAGLIO SUL DISPOSITIVO ESTERNO. La memoria di dettaglio è definitivamente esaurita e consultabile solo in lettura.</p>
+<p>Per la sua sostituzione, contattare il vostro rivenditore. Per la conservazione della memoria permanente di dettaglio esaurita fare riferimento alle normative vigenti.</p>
+<h2 id="pulizia">Pulizia</h2>
+<p>La pulizia regolare del dispositivo mantiene la qualità di stampa e ne prolunga la durata nel tempo. Lo schema seguente riporta la pianificazione consigliata per la pulizia. Se si utilizza il dispositivo in ambienti molto polverosi, occorre ridurre gli intervalli di pulizia.</p>
+<table>
+<thead>
+<tr>
+<th>Frequenza</th>
+<th>Parte</th>
+<th>Modalità</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ad ogni cambio rotolo</td>
+<td>Testina di stampa</td>
+<td>con alcol isopropilico</td>
+</tr>
+<tr>
+<td>Ad ogni cambio rotolo</td>
+<td>Rullo di stampa</td>
+<td>con alcol isopropilico</td>
+</tr>
+<tr>
+<td>Ogni 5 cambi rotolo</td>
+<td>Strapperina</td>
+<td>con aria compressa o pinzette</td>
+</tr>
+<tr>
+<td>Ogni 5 cambi rotolo</td>
+<td>Percorso carta e vano carta, Sensori</td>
+<td>con aria compressa</td>
+</tr>
+<tr>
+<td>Ogni 6 mesi o quando necessario</td>
+<td>Carrozzeria</td>
+<td>con aria compressa o un panno morbido</td>
+</tr>
+<tr>
+<td>Ogni 6 mesi o quando necessario</td>
+<td>Display</td>
+<td>con aria compressa o un panno morbido</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p class="admonition-title">Attenzione</p>
+<p>Prima di qualsiasi operazione di pulizia scollegare il cavo di alimentazione dalla presa elettrica. Non utilizzare alcol, solventi o spazzole dure. Non utilizzare prodotti a base di ammoniaca sui display e sulle superfici lucide. Assicurarsi che acqua o altri liquidi non penetrino all'interno del dispositivo.</p>
+</div>
+<h2 id="specifiche-tecniche">Specifiche tecniche</h2>
+<table>
+<thead>
+<tr>
+<th>Sezione</th>
+<th>Caratteristica</th>
+<th>Valore</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stampante</td>
+<td>Risoluzione (1)</td>
+<td>203 dpi (8 dot/mm)</td>
+</tr>
+<tr>
+<td>Stampante</td>
+<td>Metodo di stampa</td>
+<td>Termico, testina fissa</td>
+</tr>
+<tr>
+<td>Stampante</td>
+<td>Velocità di stampa (2) (3)</td>
+<td>80 mm/s</td>
+</tr>
+<tr>
+<td>Carta</td>
+<td>Larghezza carta</td>
+<td>57 mm ± 0.5 mm</td>
+</tr>
+<tr>
+<td>Carta</td>
+<td>Grammatura carta</td>
+<td>da 55 g/m² a 70 g/m²</td>
+</tr>
+<tr>
+<td>Carta</td>
+<td>Diametro esterno rotolo</td>
+<td>max. 50 mm</td>
+</tr>
+<tr>
+<td>Carta</td>
+<td>Diametro esterno anima rotolo</td>
+<td>max. 12 mm</td>
+</tr>
+<tr>
+<td>Caratteristiche elettriche</td>
+<td>Alimentazione</td>
+<td>9 Vdc, 3A</td>
+</tr>
+<tr>
+<td>Caratteristiche elettriche</td>
+<td>Assorbimento medio (3)</td>
+<td>4.44 A</td>
+</tr>
+<tr>
+<td>Alimentatore cod. 963GE020000115</td>
+<td>Tensione alimentazione</td>
+<td>da 100 Vac a 240 Vac</td>
+</tr>
+<tr>
+<td>Alimentatore cod. 963GE020000115</td>
+<td>Frequenza</td>
+<td>da 50 Hz a 60 Hz</td>
+</tr>
+<tr>
+<td>Alimentatore cod. 963GE020000115</td>
+<td>Corrente (output)</td>
+<td>4.44 A</td>
+</tr>
+<tr>
+<td>Alimentatore cod. 963GE020000115</td>
+<td>Potenza</td>
+<td>40 W</td>
+</tr>
+<tr>
+<td>Condizioni ambientali</td>
+<td>Temperatura di funzionamento</td>
+<td>da -5 °C a +45 °C</td>
+</tr>
+<tr>
+<td>Condizioni ambientali</td>
+<td>Umidità relativa (RH)</td>
+<td>da 10 % a 85% (senza condensa)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note</strong></p>
+<ol>
+<li>La qualità di stampa è fortemente influenzata dal tipo di trattamento chimico e dal tipo di stoccaggio a cui è stata sottoposta la carta termica, oltre che dalla grammatura della stessa. Potrebbe quindi rendersi necessario agire sul valore di energia di stampa (vedere programmazione P018 nel manuale utente) per ottenere la qualità di stampa desiderata.</li>
+<li>Rispettando la regolare pianificazione della pulizia delle parti del dispositivo.</li>
+<li>Riferito ad uno scontrino tipico CUSTOM (L = 10 cm, densità = 12.5% dots accesi).</li>
+</ol>
+<!-- i valori di alimentazione/assorbimento derivano da un'estrazione testuale con layout a colonne: verificare sul PDF originale -->
+
+<h2 id="guida-alle-segnalazioni-di-stato">Guida alle segnalazioni di stato</h2>
+<p>Per conoscere il significato dei codici di errore generati dal dispositivo e le eventuali azioni da intraprendere, è necessario fare riferimento alla guida alle segnalazioni di stato, disponibile sulla pagina web raggiungibile inquadrando il QR code riportato sulla copertina del documento originale.</p>
+<h2 id="informazioni-generali-sulla-sicurezza">Informazioni generali sulla sicurezza</h2>
+<p>CUSTOM S.p.A. declina ogni responsabilità per sinistri od ogni qualsivoglia inconveniente, a persone o cose, derivanti da manomissioni, modifiche strutturali o funzionali, installazione non idonea o non correttamente eseguita, ambientazione non idonea alle protezioni o climatizzazioni richieste, carenze di manutenzione o di verifiche periodiche o di riparazioni in ogni caso non correttamente eseguite.</p>
+<p>Si richiama l'attenzione sulle seguenti azioni che possono compromettere la conformità e le caratteristiche del prodotto:</p>
+<ul>
+<li>Leggete e conservate le istruzioni seguenti.</li>
+<li>Seguite tutti gli avvisi e le istruzioni indicate sul dispositivo.</li>
+<li>Non collocate il dispositivo su una superficie instabile perché potrebbe cadere e danneggiarsi seriamente.</li>
+<li>Non collocate il dispositivo su superfici morbide o in ambienti che non garantiscono la necessaria ventilazione.</li>
+<li>Non fissare in maniera indissolubile un prodotto o i suoi accessori come gli alimentatori se non specificatamente previsto da questo manuale.</li>
+<li>Collocate il dispositivo in modo da evitare che i cavi ad esso collegati possano essere danneggiati.</li>
+<li>[Solo apparecchiature OEM] L'apparecchiatura deve essere installata all'interno di un chiosco o sistema che fornisca protezione meccanica, elettrica, antifuoco.</li>
+<li>L'impianto di rete deve essere conforme alle norme in vigore nel Paese in cui si intende installare l'apparecchiatura.</li>
+<li>Assicurarsi che nel luogo in cui si vuole installare il dispositivo, vi sia una presa di corrente facilmente accessibile e di capacità non inferiore ai 10A.</li>
+<li>Accertarsi che il cavo di rete in dotazione all'apparecchiatura, o che si intende utilizzare, sia compatibile con la presa disponibile nell'impianto.</li>
+<li>Assicuratevi che l'impianto elettrico che alimenta il dispositivo sia provvisto del conduttore di terra e che sia protetto da interruttore differenziale.</li>
+<li>Prima di ogni operazione di manutenzione scollegare il cavo alimentazione.</li>
+<li>Utilizzate il tipo di alimentazione elettrica indicato sull'etichetta del dispositivo.</li>
+<li>L'alimentazione alla stampante deve essere fornita da un alimentatore di tipo SELV (definizione IEC60950-1 seconda edizione).</li>
+<li>[Solo apparecchiature DESK] L'alimentazione all'apparecchiatura deve essere fornita da un alimentatore di tipo approvato da CUSTOM S.p.A.</li>
+<li>Rispettare l'intervallo operativo dell'apparecchiatura e dei componenti accessori.</li>
+<li>Non ostruite le aperture per la ventilazione.</li>
+<li>Non introducete oggetti all'interno del dispositivo in quanto essi possono cortocircuitare o danneggiare parti che potrebbero comprometterne il funzionamento.</li>
+<li>Non intervenite personalmente sul dispositivo, eccetto che per le operazioni di ordinaria manutenzione, espressamente riportate nel manuale utente.</li>
+<li>L'apparecchiatura deve essere accessibile nelle sue componenti solamente a personale autorizzato ed addestrato.</li>
+<li>Eseguire periodicamente la manutenzione ordinaria del dispositivo al fine di evitare che accumuli di sporcizia possano compromettere il corretto e sicuro funzionamento dell'unità.</li>
+<li>[Solo dispositivi con stampante termica] Non toccare la linea di riscaldamento della testina a mani nude o con oggetti metallici. Non eseguire operazioni all'interno del dispositivo subito dopo la stampa, perché la testina ed il motore possono raggiungere temperature molto elevate.</li>
+<li>Utilizzare materiali di consumo consigliati o approvati da CUSTOM S.p.A.</li>
+</ul>
+<h2 id="contatti">Contatti</h2>
+<p>CUSTOM Pay S.r.l. - Via Isaac Newton 4, 43010 Fontevivo (PR), Italy - Tel. +39 0521-680111 - Fax +39 0521-610701 - <a href="https://www.custompay.it">www.custompay.it</a></p>
+<p>Assistenza Tecnica Clienti: <a href="https://www.custom4u.it">www.custom4u.it</a></p>
+<p>© 2026 CUSTOM S.p.A. - Italy. Tutti i diritti riservati.</p>
+<h2 id="pagine-originali">Pagine originali</h2>
+<p><img alt="Guida introduttiva - facciata 1" src="../assets/images/omni-one-guida-p1.png" /></p>
+<p><img alt="Guida introduttiva - facciata 2" src="../assets/images/omni-one-guida-p2.png" /></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Torna su
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Piede" >
+        
+          
+          <a href="../configurazione-rt-pos/" class="md-footer__link md-footer__link--prev" aria-label="Precedente: Configurazione RT/POS">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Precedente
+              </span>
+              <div class="md-ellipsis">
+                Configurazione RT/POS
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../q10a-comunicazione-pos/" class="md-footer__link md-footer__link--next" aria-label="Successivo: Configurazione carte">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Successivo
+              </span>
+              <div class="md-ellipsis">
+                Configurazione carte
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright Custom S.p.A 2026
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.preview", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "search.share", "navigation.footer"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiato", "clipboard.copy": "Copia", "search.result.more.one": "1 altro in questa pagina", "search.result.more.other": "# altri in questa pagina", "search.result.none": "Nessun documento trovato", "search.result.one": "1 documento trovato", "search.result.other": "# documenti trovati", "search.result.placeholder": "Scrivi per iniziare a cercare", "search.result.term.missing": "Non presente", "select.version": "Seleziona la versione"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
