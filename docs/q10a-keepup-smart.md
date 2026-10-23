@@ -35,7 +35,7 @@ Configurazione dello **scambio importo** tra KeepUp Smart e il dispositivo POS.
 4. Dal pannello *Servizi* selezionare il tasto **SCAMBIO IMPORTO**.
 5. Dal menù a tendina alla voce *Modalità utilizzo POS* selezionare la voce **CUSTOM PAY PROTOCOLLO 17**.
 6. Premere il flag **SCAMBIO IMPORTO SU DISPOSITIVO POS** per abilitare lo scambio importo.
-7. Compilare tutti i campi inserendo l'indirizzo IP del POS (es. `10.10.10.11`, vedere [paragrafo 2.3](q10a-comunicazione-pos.md#23-configurazione-su-dispositivo-pos)) e la porta di comunicazione (default = `8080`).
+7. Compilare tutti i campi inserendo l'indirizzo IP del POS (es. `10.10.10.11`, vedere [paragrafo 2.3 del manuale](assets/resources/0576100M000218_2.00.pdf)) e la porta di comunicazione (default = `8080`).
 8. Premere il flag **DIS-PAY**.
 9. Premere il tasto **TEST CONNESSIONE** per verificare il collegamento con il POS.
 10. Per confermare le impostazioni selezionare il tasto **SALVA E CHIUDI**.

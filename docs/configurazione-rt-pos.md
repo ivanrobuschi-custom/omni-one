@@ -186,7 +186,7 @@ La password è **dinamica** e si compone nel formato `mm1gg7`: `mm` = mese corre
 
 ### 20. Impostare la rete Ethernet del POS
 
-Aprire le **IMPOSTAZIONI**: qui la password è **fissa** (vedere il [paragrafo 2.3 del manuale](q10a-comunicazione-pos.md#23-configurazione-su-dispositivo-pos)). Selezionare **Rete e Internet**.
+Aprire le **IMPOSTAZIONI**: qui la password è **fissa** (vedere il [paragrafo 2.3 del manuale](assets/resources/0576100M000218_2.00.pdf)). Selezionare **Rete e Internet**.
 
 ![Impostazioni - Rete e Internet](assets/images/rt-pos-20-pos-impostazioni-rete.jpg)
 
@@ -254,7 +254,7 @@ Quando il display del POS mostra la stessa dicitura che appare sul display opera
 
 ## Approfondimenti
 
-- [Comunicazione con il POS](q10a-comunicazione-pos.md)
+- [Configurazione carte e sostituzione POS](q10a-comunicazione-pos.md)
 - [Configurazione PAX Tools](q10a-paxtools.md)
 - [Configurazione KeepUp Smart](q10a-keepup-smart.md)
 - [Configurazione carte](q10a-configurazione-carte.md)

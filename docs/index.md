@@ -141,7 +141,7 @@ Ethernet, USB tipo A, seriale RS232, porta per cassetto rendiresto e ingresso di
 |---------|-----------|
 | [Configurazione RT/POS](configurazione-rt-pos.md) | Procedura passo per passo con immagini: rete dell'RT, comunicazione con il POS, configurazione del Q10A |
 | [Guida introduttiva OMNI ONE](omni-one-guida-introduttiva.md) | Descrizione del dispositivo, assetti operativi, rendiconti, codici brevi, pulizia, specifiche e sicurezza |
-| [Comunicazione con il POS](q10a-comunicazione-pos.md) | Configurazione di rete su registratore di cassa, OMNI TOUCH e POS |
+| [Carte e sostituzione POS](q10a-comunicazione-pos.md) | Configurazione carte (Terminal ID, connessione, certificato) e sostituzione del POS tramite MAXSTORE |
 | [Configurazione KeepUp Smart](q10a-keepup-smart.md) | Scambio importo su OMNI TOUCH e DIS-PAY |
 | [Configurazione carte](q10a-configurazione-carte.md) | Installazione Terminal ID e parametri di comunicazione |
 | [Configurazione PAX Tools](q10a-paxtools.md) | Scambio importo con protocollo 17 |

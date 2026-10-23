@@ -47,7 +47,7 @@ nav:
   - Guida all'uso:
       - Guida introduttiva OMNI ONE: omni-one-guida-introduttiva.md
   - Configurazione POS Q10A:
-      - Comunicazione con il POS: q10a-comunicazione-pos.md
+      - Carte e sostituzione POS: q10a-comunicazione-pos.md
       - Configurazione KeepUp Smart: q10a-keepup-smart.md
       - Configurazione carte: q10a-configurazione-carte.md
       - Configurazione PAX Tools: q10a-paxtools.md

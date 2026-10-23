@@ -1,5 +1,5 @@
 ---
-title: "Q10A - Configurazione comunicazione con dispositivo POS"
+title: "Q10A - Configurazione carte e sostituzione POS"
 date: "2026-09-02"
 version: "2.00"
 categoria: manuale tecnico RT
@@ -7,113 +7,157 @@ protocollo: Custom
 ---
 
 <!-- categoria assegnata per inferenza: verificare -->
+<!-- pagina ricostruita esclusivamente dai capitoli 4 (Configurazione carte) e 6 (Sostituzione POS) del manuale 0576100M000218 Rev. 2.00 -->
 
-# Configurazione comunicazione con dispositivo POS
+# Configurazione carte e sostituzione POS
 
-## 1. Introduzione
+Questa pagina riunisce due procedure del manuale di configurazione del POS **Q10A** (Custom Pay):
 
-Il manuale di configurazione del POS **Q10A** è suddiviso in sezioni e capitoli. Ogni capitolo è raggiungibile dal sommario collocato all'inizio del documento originale, a sua volta raggiungibile tramite il pulsante presente in ogni pagina.
+| Procedura | Quando serve |
+|-----------|--------------|
+| [Configurazione carte](#configurazione-carte) | Installazione dell'applicazione CARTE sul POS: Terminal ID, codice azienda e parametri di connessione al sistema di pagamento |
+| [Sostituzione POS](#sostituzione-pos) | Sostituzione sul campo di un POS installato con un nuovo dispositivo dello stesso modello |
 
-Nel documento originale sono utilizzate le seguenti convenzioni grafiche:
-
-- **ATTENZIONE**: informazioni necessarie per non compromettere il funzionamento dei dispositivi.
-- **NOTE**: informazioni o suggerimenti generali per l'utilizzo dei dispositivi.
-- Informazioni o suggerimenti relativi ad operazioni specifiche.
-- Indicazioni "Valido solo per i dispositivi ..." per i contenuti riferiti a modelli specifici.
-
-![Convenzioni del manuale](assets/images/q10a-p05.png)
+Entrambe le procedure partono dall'accesso al menù di configurazione del POS descritto qui sotto.
 
 [Scarica il manuale completo (PDF)](assets/resources/0576100M000218_2.00.pdf)
 
-## 2. Configurazione comunicazione con dispositivo POS
+## Accesso al menù di configurazione del POS
 
-Con *dispositivo POS* si intende il dispositivo POS Q10A integrato nel registratore di cassa oppure nel dispositivo DIS-PAY.
+Il punto di partenza è identico per le due procedure.
 
-Prima di procedere, assicurarsi che la connessione alla rete locale del punto vendita sia attiva. Collegare la porta Ethernet del registratore di cassa alla rete Ethernet del punto vendita. Nel caso in cui si utilizzi un dispositivo DIS-PAY occorrerà collegare anche quest'ultimo alla rete del punto vendita.
+1. Accendere il registratore di cassa premendo il tasto **ON/OFF**.
+
+    !!! note "DIS-PAY"
+        Nel caso di utilizzo di un DIS-PAY, accenderlo collegando l'adattatore esterno fornito alla rete elettrica. Il dispositivo si accenderà autonomamente.
+
+2. Sul display cliente (dispositivo POS) viene visualizzata la schermata **BENVENUTO** di Custom Pay: premere sul display **entro 30 secondi**.
+3. Se il dispositivo è acceso e il display è in standby, in modo equivalente, premere **due volte nell'angolo in alto a sinistra** del display.
+4. Viene visualizzata la schermata **Inserisci Password**. Tramite la tastiera numerica inserire la password `mm1gg7`, dove `mm` = mese corrente e `gg` = data odierna.
+5. Premere sul tasto **OK**.
+
+!!! tip "Esempio"
+    Il 22 ottobre la password è `101227`.
+
+---
+
+## Configurazione carte
+
+Procedere come segue, dopo aver eseguito l'[accesso al menù di configurazione](#accesso-al-menu-di-configurazione-del-pos).
+
+### 1. Aprire l'applicazione CARTE
+
+1. Viene visualizzata la schermata **Configurazione** con i tasti IMPOSTAZIONI, INFORMAZIONI SOFTWARE, APPLICAZIONI e REBOOT. Premere sul tasto **APPLICAZIONI**.
+2. Viene visualizzata la schermata **Applicazioni** (Calcolatrice, otg role, MAXSTORE, AirViewer, Carte, Network, PAX Tools). Premere sul tasto **CARTE**.
+3. Viene visualizzata la schermata **Installazione** ("Effettua la configurazione del terminale per iniziare..."). Premere sul tasto **INIZIA**.
+4. Viene visualizzata la schermata **Inserisci la password installatore**. Tramite la tastiera numerica inserire la password installatore: `06306`.
+5. Premere sul tasto **OK**.
+
+![Pagina 23 - Accesso e password](assets/images/q10a-p23.png)
+
+![Pagina 24 - Applicazioni, CARTE, INIZIA e password installatore](assets/images/q10a-p24.png)
+
+### 2. Terminal ID e autoconfigurazione
+
+1. Viene visualizzata la schermata **Inserisci il Terminal ID**. Con la tastiera numerica inserire il codice del **Terminal ID di 8 cifre** e premere **OK**.
+2. Viene visualizzata la schermata **Autoconfigurazione**, con le opzioni *Default* e *Personalizzata...*. Premere sull'opzione **DEFAULT**.
+3. Premere sul tasto **AVANTI**.
+4. Viene visualizzata la schermata **Codice azienda**. Con la tastiera numerica inserire il codice azienda `89025` e premere **OK**.
+
+![Pagina 25 - Terminal ID, autoconfigurazione e codice azienda](assets/images/q10a-p25.png)
+
+### 3. Connessione primaria
+
+Viene visualizzata la schermata **Connessione primaria**, con i seguenti campi:
+
+| Campo | Valore |
+|-------|--------|
+| Periferica | Ethernet |
+| Protocollo di trasporto | IP Header (selezionato; l'alternativa è BT) |
+| IP | `xxx.xxx.xxx.xxx` (da modificare) |
+| Porta | `xxxxx` (da modificare) |
+
+1. Con la tastiera numerica modificare i parametri **IP** con `185.198.119.196` e i parametri **Porta** con `34000`.
+2. Premere sul flag **TLS**.
+3. Premere sul tasto **CERTIFICATO**. Viene visualizzato l'elenco: *Certificato TLS SIA*, *NEXI (Terzi)*, *Sisal TLS*.
+4. Premere sul certificato **NEXI (Terzi)**.
+5. Nella schermata finale controllare i campi: IP `185.198.119.196`, Porta `34000`, TLS attivo, Certificato **NEXI (Terzi)**, *Time out attesa connessione* (da 5 a 50, valore mostrato: 30) e *Time out attesa risposta* (da 10 a 50, valore mostrato: 30).
+
+![Pagina 26 - Connessione primaria e certificato](assets/images/q10a-p26.png)
+
+![Pagina 27 - Riepilogo e installazione](assets/images/q10a-p27.png)
+
+### 4. Installare
+
+1. Premere sul tasto **INSTALLA**.
+2. Attendere che il dispositivo POS completi la comunicazione con il sistema (l'operazione può richiedere alcuni secondi).
+
+!!! note "Esito dell'installazione"
+    Se l'installazione non è andata a buon fine controllare le configurazioni. Se l'installazione è andata a buon fine, il dispositivo è pronto per eseguire transazioni di pagamento.
+
+### Riepilogo parametri
+
+| Parametro | Valore |
+|-----------|--------|
+| Password dinamica di accesso | `mm1gg7` |
+| Password installatore | `06306` |
+| Terminal ID | codice di 8 cifre |
+| Autoconfigurazione | Default |
+| Codice azienda | `89025` |
+| Periferica | Ethernet |
+| Protocollo di trasporto | IP Header |
+| IP | `185.198.119.196` |
+| Porta | `34000` |
+| TLS | Attivo |
+| Certificato | NEXI (Terzi) |
+
+---
+
+## Sostituzione POS
+
+È possibile sostituire un dispositivo POS installato sul campo con un nuovo dispositivo (**stesso modello**) tramite la seguente procedura. Le operazioni vanno eseguite **sul nuovo dispositivo**.
 
 !!! warning "Attenzione"
-    Per la configurazione della comunicazione del dispositivo POS integrato nel registratore di cassa o nel DIS-PAY occorre utilizzare indirizzi IP **STATICI** da assegnare rispettivamente al registratore di cassa ed al dispositivo di pagamento.
+    Per sostituire il POS occorre disporre del numero di serie (SN) del dispositivo **da sostituire**: può essere scansionato oppure digitato manualmente.
 
-### 2.1 Configurazione su registratori di cassa
+### 1. Accedere alle impostazioni
 
-1. Accendere il dispositivo con il tasto ON/OFF.
-2. Entrare in assetto **Programmazione** mediante il tasto CHIAVE.
-3. Attivare la comunicazione Ethernet sul registratore di cassa attivando la procedura (911) Ethernet. Utilizzare i tasti con le frecce di selezione per navigare all'interno del menù.
-4. Compilare tutti i campi assicurandosi di **disabilitare il DHCP** e inserendo l'indirizzo IP (es. `10.10.10.10`), la maschera subnet, il gateway, il DNS e la porta di protocollo della rete.
-5. Premere il tasto **SUBTOTALE** per confermare.
-6. Viene stampato il seguente documento gestionale:
+1. Eseguire l'[accesso al menù di configurazione](#accesso-al-menu-di-configurazione-del-pos) sul nuovo dispositivo (password `mm1gg7`).
+2. Viene visualizzata la schermata **Configurazione**. Premere sul tasto **IMPOSTAZIONI**.
+3. Viene visualizzata la schermata **Please Input Password**. Tramite la tastiera numerica inserire la seguente password: `pax9876@@.`
+4. Premere il tasto **OK**.
 
-    ```text
-    DOCUMENTO GESTIONALE
-    P (911) Ethernet
-    ABILITA DHCP:      [DISABILITATO]
-    INDIRIZZO IP:      <10.10.10.10>
-    MASCHERA SUBNET:   <xxx.xxx.xxx.xxx>
-    GATEWAY:           <xxx.xxx.xxx.xxx>
-    DNS:               <xxx.xxx.xxx.xxx>
-    PORTA PROTOCOLLO   <xxxxxx>
-    MAC ID:            <xxx.xxx.xxx.xxx>
-    01/01/26 12:00     <#DOC. GES.>
-    NUMERO DI MATRICOLA <matr. fiscale>
-    ```
+![Pagina 33 - Accesso al nuovo dispositivo](assets/images/q10a-p33.png)
 
-7. Programmare i dati per impostare la comunicazione con il POS. Sul display viene visualizzato `[PROT17 CPAY]` - **CUSTOM PAY**.
-8. Utilizzare i tasti con le frecce di selezione per navigare all'interno del menù.
-9. Compilare tutti i campi inserendo l'indirizzo IP del POS (es. `10.10.10.11`, vedere [paragrafo 2.3](#23-configurazione-su-dispositivo-pos)) e la porta di comunicazione (default = `8080`).
-10. Confermare con il tasto **SUBTOTALE**. Viene stampato il seguente documento gestionale:
+### 2. Aprire MAXSTORE
 
-    ```text
-    DOCUMENTO GESTIONALE
-    P (917) Ethernet
-    CUSTOM PAY          [PROT17 CPAY]
-    INDIRIZZO IP        <10.10.10.11>
-    PORTA               <8080>
-    01/01/26 12:00      <#DOC. GES.>
-    NUMERO DI MATRICOLA <matr. fiscale>
-    ```
+1. Viene visualizzata la schermata delle impostazioni (Rete e Internet, Dispositivi connessi, App e notifiche, Display). Premere sul tasto **APP E NOTIFICHE**.
+2. Viene visualizzata la schermata **App e notifiche** con le app aperte di recente. Premere sul tasto **MOSTRA TUTTE LE APP**.
+3. Viene visualizzato l'elenco delle app (Calcolatrice, Carte, File, LauncherQ10A, MAXSTORE, NeptuneService, ...). Premere sul tasto **MAXSTORE**.
+4. Viene visualizzata la schermata **Informazioni app** di MAXSTORE (APRI, DISINSTALLA, FORZA INTERRUZIONE). Premere sul tasto **APRI**.
 
-![Pagina 7 - Registratori di cassa](assets/images/q10a-p07.png)
+![Pagina 34 - Impostazioni e app](assets/images/q10a-p34.png)
 
-![Pagina 8 - Registratori di cassa](assets/images/q10a-p08.png)
+![Pagina 35 - MAXSTORE](assets/images/q10a-p35.png)
 
-![Pagina 9 - Registratori di cassa](assets/images/q10a-p09.png)
+### 3. Avviare la sostituzione
 
-### 2.2 Configurazione su dispositivi OMNI TOUCH
+1. Viene visualizzata la schermata di MAXSTORE con il messaggio: *Accesso fallito, il terminale (SN:XXXXXX) non risulta registrato*. Premere sull'**icona in alto a destra**.
+2. Viene visualizzata la schermata **Gestione Terminale**, con le voci *Inizializzazione* e *Sostituzione*. Premere sul tasto **SOSTITUZIONE**.
+3. Viene visualizzata la schermata **Sostituisci terminale**, con il metodo di sostituzione **SN** (alternativa: TID). Scansionare il numero di serie (SN, es. `YYYYYYYYY`) del dispositivo da sostituire oppure digitarlo manualmente tramite tastiera.
+4. Premere sul tasto **PROSSIMO**.
+5. Viene visualizzata la schermata di conferma con i dati del terminale da sostituire: TID, Serial No., Nome Terminale, Reseller, Merchant e Data creazione. Premere sul tasto **SOSTITUZIONE**.
+6. Il sistema completerà automaticamente l'operazione.
 
-1. Accendere il dispositivo.
-2. Collegare il dispositivo al PC ed alla porta **USB Service**.
-3. Avviare il tool **CeFiscalRxConfigurator** disponibile su [www.custom4u.it](https://www.custom4u.it).
-4. Premere sul tasto **CARICA DATI STAMPANTE**; viene visualizzata la schermata di configurazione.
-5. Per impostare i parametri di comunicazione della cassa selezionare il menù **(911) Ethernet**.
-6. Compilare tutti i campi assicurandosi di **disabilitare il DHCP** e inserendo l'indirizzo IP (es. `10.10.10.10`), la maschera subnet, il gateway, il DNS e la porta di protocollo della rete.
-7. Premere sul tasto **OK** per confermare.
-8. Per impostare i parametri di comunicazione del POS selezionare il menù **(917) Custom Pay**.
-9. Compilare tutti i campi inserendo l'indirizzo IP del POS (es. `10.10.10.11`, vedere [paragrafo 2.3](#23-configurazione-su-dispositivo-pos)) e la porta di comunicazione (default = `8080`).
-10. Premere sul tasto **OK** per confermare.
-11. Premere sul tasto **SALVA DATI SU STAMPANTE**.
+![Pagina 36 - Sostituisci terminale](assets/images/q10a-p36.png)
 
-![Pagina 10 - OMNI TOUCH](assets/images/q10a-p10.png)
+### 4. Esito
 
-![Pagina 11 - OMNI TOUCH](assets/images/q10a-p11.png)
+Viene visualizzata la schermata di MAXSTORE con le app **AirViewer**, **Carte** e **PAX Tools**.
 
-![Pagina 12 - OMNI TOUCH](assets/images/q10a-p12.png)
+![Pagina 37 - Esito della sostituzione](assets/images/q10a-p37.png)
 
-### 2.3 Configurazione su dispositivo POS
+!!! note "Esito della sostituzione"
+    Il nuovo dispositivo risulta correttamente registrato su MAXSTORE. Le applicazioni preinstallate di fabbrica rimangono invariate; vengono inoltre scaricate automaticamente le eventuali applicazioni aggiuntive già presenti sul dispositivo sostituito.
 
-Collegare la porta Ethernet del registratore di cassa alla rete locale del punto vendita. Nel caso in cui si utilizzi un dispositivo DIS-PAY, occorre collegare anche quest'ultimo alla rete del punto vendita.
-
-1. Accendere il registratore di cassa premendo il tasto **ON/OFF**. Nel caso di utilizzo di un DIS-PAY, accenderlo collegando l'adattatore esterno fornito alla rete elettrica: il dispositivo si accenderà autonomamente.
-2. Sul display cliente (dispositivo POS) viene visualizzata la schermata iniziale; premere entro **30 secondi** sul display. Se il dispositivo è acceso e il display è in standby, in modo equivalente, premere due volte nell'angolo in alto a sinistra del display.
-3. Alla schermata *Inserisci Password*, tramite la tastiera numerica inserire la password `mm1gg7` (dove `mm` = mese corrente e `gg` = data odierna) e premere **OK**.
-4. Premere sul tasto **IMPOSTAZIONI**.
-5. Tramite la tastiera numerica inserire la seguente password: `pax9876@@.` e premere **OK**.
-6. Premere sul tasto **RETE E INTERNET** e selezionare la voce **Ethernet**.
-7. Abilitare la voce **STATIC IP**.
-8. Inserire un IP statico e i parametri della rete (*IP address*, *Subnet mask*, *Gateway*) tramite la tastiera.
-9. Premere il tasto **OK** per confermare.
-
-![Pagina 13 - Dispositivo POS](assets/images/q10a-p13.png)
-
-![Pagina 14 - Dispositivo POS](assets/images/q10a-p14.png)
-
-![Pagina 15 - Dispositivo POS](assets/images/q10a-p15.png)
+    Sul dispositivo sostituito viene visualizzato il messaggio: *ATTENZIONE: il terminale è stato sostituito.*

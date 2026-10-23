@@ -10,7 +10,7 @@ protocollo: Custom
 
 # Applicazione Network Configurator
 
-L'applicazione **Network Configurator** consente di impostare la configurazione di rete del POS Q10A in alternativa all'utilizzo delle impostazioni di rete di sistema (vedere [paragrafo 2.3](q10a-comunicazione-pos.md#23-configurazione-su-dispositivo-pos)).
+L'applicazione **Network Configurator** consente di impostare la configurazione di rete del POS Q10A in alternativa all'utilizzo delle impostazioni di rete di sistema (vedere [paragrafo 2.3 del manuale](assets/resources/0576100M000218_2.00.pdf)).
 
 Prima di procedere a collegare la porta Ethernet del registratore di cassa (OMNI KEY / OMNI ONE / OMNI TOUCH) alla rete locale del punto vendita, assicurarsi che la connessione alla rete sia attiva.
 
