@@ -1,0 +1,56 @@
+site_name: OMNI ONE
+site_url: https://github.com/custom-spa/omni-one.git
+site_author: Custom S.p.A.
+
+theme:
+  name: material
+  logo: assets/icons/logo.png
+  favicon: assets/icons/favicon.png
+  language: it
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.preview
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+    - navigation.sections
+    - navigation.prune
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+  palette:
+    primary: blue grey
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - tags
+
+copyright: Copyright Custom S.p.A 2026
+
+nav:
+  - Home: index.md
+  - Configurazione RT/POS: configurazione-rt-pos.md
+  - Guida all'uso:
+      - Guida introduttiva OMNI ONE: omni-one-guida-introduttiva.md
+  - Configurazione POS Q10A:
+      - Comunicazione con il POS: q10a-comunicazione-pos.md
+      - Configurazione KeepUp Smart: q10a-keepup-smart.md
+      - Configurazione carte: q10a-configurazione-carte.md
+      - Configurazione PAX Tools: q10a-paxtools.md
+      - Sostituzione POS: q10a-sostituzione-pos.md
+      - Network Configurator: q10a-network-configurator.md
+      - Launcher Q10A: q10a-launcher.md
